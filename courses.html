@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>SmileSchool - homepage</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1, viewport-fit=cover'>
+        <link rel='icon' type='image/png' href='./images/favicon.ico'>
+        <!-- External libraries -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- CSS Styling -->
+        <link rel="stylesheet" href="./styles.css">
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <main class="courses-main">
+            <!-- HERO SECTION -->
+            <section class="hero-section">
+                <header class="header px-5 py-5">
+                    <label for="small-nav-handler" class="nav-btn"></label>
+                    <input type="checkbox" id="small-nav-handler">
+                    <div class="logo-container">
+                        <img src="./images/smile_off.png" alt="smile image">
+                        <img src="./images/logo.png" alt="holberton smiling school logo">
+                    </div>
+                    <lu class="nav-list">
+                        <li><a class="active" href="./courses.html">COURSES</a></li>
+                        <li><a href="./pricing.html">PRICING</a></li>
+                        <li><a href="./login.html">LOGIN</a></li>
+                    </lu>
+                </header>
+                <h1 class="pricing-page-title text-center py-5 mx-auto d-none d-sm-block">
+                    « Don’t cry because it’s over.<br><span class="purple-text">Smile</span> because it happened. »
+                </h1>
+            </section>
+            <!-- HERO SECTION -->
+
+            <!-- SEARCH SECTION -->
+            <div class="search-filters pt-0 pb-4">
+                <div class="container-md row mx-auto">
+                    <div class="col-12 col-md-4 mt-3">
+                        <label for="user_search" class="mb-2">KEYWORDS</label>
+                        <input type="text" class="form-control mx-auto border-0 rounded-0 search-element" id="user_search" placeholder="user_search" aria-label="user_search" aria-describedby="basic-addon1">
+                        <i class="holberton_school-icon-search_2 input-icon"></i>
+                    </div>
+
+
+                    <div class="col-12 col-sm-6 col-md-4 mt-3">
+                        <label class="mb-2">TOPIC</label>
+                        <div id="topic-menu-container" class="dropdown">
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 mt-3">
+                        <label class="mb-2">SORT BY</label>
+                        <div id="sort-menu-container" class="dropdown">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- SEARCH SECTION -->
+
+
+            <!-- RESULTS SECTION -->
+            <section class="results-section py-5">
+                <div class="container-md">
+                    <div id="numberofvideos" class="mb-5 text-secondary ml-3"></div>
+                    <div id="coursesvideos" class="d-flex flex-wrap">
+                      <div id="CoursesLoader" class="loader"></div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- RESULTS SECTION -->
+        </main>
+        <!-- FOOTER -->
+        <footer>
+            <div class="row container-md px-4 mx-auto">
+                <div class="logo-container col-12 col-sm-6">
+                    <img src="./images/smile_off.png" alt="smile image">
+                    <img src="./images/logo.png" alt="holberton smiling school logo">
+                </div>
+                <div class="social-media-icons col-12 col-sm-6 mt-5 mt-sm-0">
+                    <div class="text-center d-flex mx-auto ml-sm-auto mr-sm-0">
+                        <i class="holberton_school-icon-ic_facebook"></i>
+                        <i class="holberton_school-icon-ic_twitter"></i>
+                        <i class="holberton_school-icon-ic_instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                ©smileschool 2020
+            </div>
+        </footer>
+        <!-- FOOTER -->
+    </body>
+</html>

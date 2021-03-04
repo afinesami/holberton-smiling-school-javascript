@@ -1,0 +1,574 @@
+@font-face {
+    font-family: 'holberton_school-icon';
+    src:  url('./icons/fonts/holberton_school-icon.eot?sq4eq4');
+    src:  url('./icons/fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+      url('./icons/fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+      url('./icons/fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+      url('./icons/fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+  [class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'holberton_school-icon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .holberton_school-icon-arrow_1:before {
+    content: "\e900";
+  }
+  .holberton_school-icon-arrow_2:before {
+    content: "\e901";
+  }
+  .holberton_school-icon-arrow_3:before {
+    content: "\e902";
+  }
+  .holberton_school-icon-arrow_4:before {
+    content: "\e903";
+  }
+  .holberton_school-icon-arrow_5:before {
+    content: "\e904";
+  }
+  .holberton_school-icon-check:before {
+    content: "\e905";
+  }
+  .holberton_school-icon-ic_bag:before {
+    content: "\e906";
+  }
+  .holberton_school-icon-ic_cart:before {
+    content: "\e907";
+  }
+  .holberton_school-icon-ic_facebook:before {
+    content: "\e908";
+  }
+  .holberton_school-icon-ic_hearing:before {
+    content: "\e909";
+  }
+  .holberton_school-icon-ic_instagram:before {
+    content: "\e90a";
+  }
+  .holberton_school-icon-ic_laptop:before {
+    content: "\e90b";
+  }
+  .holberton_school-icon-ic_money:before {
+    content: "\e90c";
+  }
+  .holberton_school-icon-ic_music:before {
+    content: "\e90d";
+  }
+  .holberton_school-icon-ic_sound:before {
+    content: "\e90e";
+  }
+  .holberton_school-icon-ic_twitter:before {
+    content: "\e90f";
+  }
+  .holberton_school-icon-ic_video:before {
+    content: "\e910";
+  }
+  .holberton_school-icon-menu:before {
+    content: "\e911";
+  }
+  .holberton_school-icon-search_1:before {
+    content: "\e912";
+  }
+  .holberton_school-icon-search_2:before {
+    content: "\e913";
+  }
+  .holberton_school-icon-star:before {
+    content: "\e914";
+  }
+
+:root {
+    --max-width: 1150px;
+    --purple-color: #C271FF;
+    --blue-color: #071629;
+    --section-padding: 90px 0;
+    --table-row-bottom-border: 1px solid #394454;
+    --green-color: #82D24F;
+    --black-color: #071629;
+    --pale-purple-color: #d194fd;
+    --search-border-color: #eacffe;
+}
+
+* {
+    font-family: 'Source sans pro', 'Spin Cycle', 'holberton_school-icon', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    color: white;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* ---------- HOMEPAGE ----------  */
+/*  HERO SECTION */
+.hero-section {
+    background-image: url('./images/pic_1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main.pricing-main .hero-section {
+  background-image: url('./images/pic_2.jpg');
+}
+
+main.courses-main .hero-section {
+  background-image: url('./images/pic_3.jpg');
+}
+
+.header {
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+.nav-btn {
+    display: none;
+}
+
+#small-nav-handler {
+    display: none;
+}
+
+.logo-container {
+    float: left;
+}
+
+.logo-container img {
+    height: 2rem;
+}
+
+.logo-container img:first-child {
+    margin-right: 1rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    float: right;
+}
+
+.nav-list li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    margin-left: 2rem;
+}
+
+.nav-list li a.active {
+  color: var(--purple-color);
+  border-bottom: 2px solid white;
+  padding-bottom: 4px;
+}
+
+.big-title {
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 5rem auto -1rem;
+}
+
+.subtitles {
+    color: white
+}
+
+.btn {
+    background-color: var(--purple-color) !important;
+    display: block;
+}
+
+.purple-text {
+    color: var(--purple-color);
+}
+
+.small-title {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+.testimonials img {
+    width: 125px;
+    height: 125px;
+}
+
+@media screen and (max-width: 576px) {
+    .logo-container {
+        float: none;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 180px;
+    }
+
+    .logo-container img:first-child {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        max-width: 42px;
+    }
+
+    .nav-btn {
+        float: left;
+        display: block;
+        height: 3px;
+        width: 1.35rem;
+        background-color: white;
+        margin-top: 1rem;
+    }
+
+    .nav-btn::before {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 2rem;
+        margin-top: 10px;
+        background-color: white;
+    }
+
+    .nav-btn::after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 2rem;
+        margin-top: -23px;
+        background-color: white;
+    }
+
+    .nav-list {
+        display: none;
+        float: none;
+        text-align: center;
+        margin: 5rem auto;
+    }
+
+    .nav-list li {
+        margin-bottom: 1rem;
+    }
+
+    input#small-nav-handler:checked ~ .nav-list {
+        display: block;
+    }
+}
+
+/* Quotes CAROUSEL SECTION */
+
+.quotes-section {
+    background-color: var(--purple-color);
+    padding: var(--section-padding);
+}
+
+.quotes-section img {
+    width: 125px;
+    height: 125px;
+}
+
+.carousel-item-content {
+    padding-right: 80px;
+    padding-left: 80px;
+}
+
+
+/* COMMON SECTION STYLING */
+
+.section-title {
+  margin-bottom: 70px;
+}
+
+/* Videos CAROUSEL SECTION */
+
+.tutorial-section {
+  padding: var(--section-padding);
+}
+
+.video-carousel-img-profile {
+    height: 30px;
+    width: 30px;
+}
+
+.carousel-star-icon {
+    height: 1rem;
+    width: 1rem;
+}
+
+.videos-slides-container {
+  padding: 0 100px;
+}
+
+.videos-slides-container .carousel-inner {
+  flex-basis: 50% !important;
+}
+
+.tutorial-video-top {
+  position: relative;
+}
+
+.video-play-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 45px;
+  width: 45px;
+  transform: translate(-50%,-50%);
+}
+
+
+/* FREE MEMBERSHIP SECTION */
+
+.free-membership-section {
+  background-color: var(--blue-color);
+  padding: var(--section-padding);
+}
+
+.free-membership-section > div > div {
+  margin-bottom: 60px;
+}
+
+.free-membership-section .free-membership-item-description {
+  max-width: 250px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--blue-color);
+  padding: var(--section-padding);
+}
+
+footer .logo-container {
+  float: none;
+}
+
+footer > div:first-child {
+  margin-bottom: 50px;
+}
+
+footer > div:last-child {
+  opacity: 35%;
+}
+
+.social-media-icons > div:first-child{
+  width: 130px;
+  max-width: 130px;
+}
+
+.social-media-icons i {
+  font-size: 30px;
+  color: white;
+}
+
+.social-media-icons i:not(:first-child) {
+  margin-left: 20px;
+}
+
+/* ---------- PRICING PAGE ----------  */
+
+/* HERO Section */
+.text-logo {
+  margin-top: 200px;
+  flex-wrap: wrap;
+}
+
+/* Pricing Table styling */
+.th-title {
+  font-size: 44px;
+}
+
+.table-btn {
+  padding: 13px 36px;
+}
+
+table .table-btn {
+  min-width: 180px;
+}
+
+.table-subtitle {
+  font-size: 12px;
+  opacity: 50%;
+  font-weight: 400;
+}
+
+.tr-title {
+  font-weight: 400 !important;
+  font-size: 18px;
+}
+
+.bordered-table-row {
+  border-bottom: var(--table-row-bottom-border);
+}
+
+.table td, .table th {
+  padding: 1.25rem;
+}
+
+table i {
+  color: var(--green-color);
+  font-size: 28px;
+}
+
+tbody tr:first-child {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+
+  thead {
+    display: none;
+  }
+
+  tbody tr:first-child {
+    display: table-row;
+  }
+
+  tbody tr:first-child td {
+    font-size: 12px;
+    font-weight: bold;
+    min-width: 95px;
+    padding-bottom: 0px;
+  }
+}
+
+/* FAQ Section */
+
+.faq-section {
+  padding: var(--section-padding);
+}
+
+.faq-section h1, .faq-section h2, .faq-section .faq-answer {
+  color: var(--black-color) !important;
+}
+
+.faq-section h1 {
+  font-size: 60px !important;
+  margin-bottom: 75px;
+}
+
+.one-faq h2 {
+  margin-left: -2px !important;
+}
+
+.faq-section .faq-answer {
+  font-weight: 14px;
+  opacity: 50%;
+  margin-bottom: 75px;
+  text-align: justify;
+}
+
+/* --------- COURSES PAGE ---------- */
+
+/* HERO Section */
+.pricing-page-title {
+  font-size: 32px !important;
+  font-family: Coiny !important;
+  margin-bottom: 0px;
+}
+
+.pricing-page-title span {
+  font-family: inherit !important;
+}
+
+/* SEARCH Filters */
+
+.courses-p-body {
+  height: 100vh;
+}
+
+.search-filters {
+  background-color: var(--purple-color);
+}
+
+.search-filters  .search-element {
+  border-bottom: 1px solid !important;
+  border-color: var(--search-border-color) !important;
+}
+
+.search-filters label {
+  font-weight: bolder;
+  font-size: 12px !important;
+}
+
+.search-filters input {
+  background-color: var(--pale-purple-color);
+  font-size: 24px;
+  opacity: 75%;
+  color: black !important;
+  padding-left: 40px;
+}
+
+.input-icon {
+  font-size: 22px;
+  font-weight: bold;
+  position: absolute;
+  top: 46px;
+  left: 22px;
+}
+
+.search-filters input:focus {
+  color: black;
+}
+
+.search-filters input:focus ~ .input-icon {
+  /* display: none; */
+  color: var(--black-color);
+}
+
+.search-filters input::placeholder {
+  color: white;
+  font-size: 24px;
+  opacity: 50%;
+}
+
+/* Dropdown search */
+
+.dropdown button {
+  font-size: 23px;
+  font-weight: lighter;
+}
+
+.dropdown button.search-element:first-child {
+  background-color: var(--pale-purple-color) !important;
+}
+.dropdown button:first-child::after {
+  content: "\e904";
+  color: white;
+  font-size: 22px;
+  float: right;
+  margin-top: 2px;
+}
+
+.dropdown-menu {
+  width: 100%;
+}
+
+.dropdown-menu button:hover {
+  color: var(--purple-color);
+}
+
+/* Loader */
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #C271FF;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
